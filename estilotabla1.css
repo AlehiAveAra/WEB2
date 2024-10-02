@@ -1,0 +1,33 @@
+body {
+    font-family: Arial;
+    color: red;
+    font-size: 25px;
+    background-image: url("fotos/fondo3.jpg"); 
+}
+
+table {
+   width: 100%;
+   border: 5px solid #ff0000;
+   border-spacing: 2px;
+   background: #000000 ;
+
+}
+th, td {
+   width: 20%;
+   text-align: left;
+   vertical-align: top;
+   border: 3px solid #00ff00;
+   padding: 30px;
+}
+caption {
+   padding: 20px;
+   color: #ffffff;
+    background: orange;
+}
+th {
+   background: #eeeeee;
+}
+
+ul li{
+  list-style-image: url("fotos/bien.ico");
+}

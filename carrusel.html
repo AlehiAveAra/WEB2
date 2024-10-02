@@ -1,0 +1,183 @@
+
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+
+  <meta charset="UTF-8">
+
+
+
+  <title>Carousel</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css'>
+  
+<style>
+@import 'https://fonts.googleapis.com/css?family=Josefin+Slab';
+body {
+  font-family: "Josefin Slab";
+  height: 100vh;
+  background-color: #222;
+}
+
+.section-project {
+  padding: 30px 0;
+  position: relative;
+  background-color: #222;
+}
+
+.section__title, .section__subtitle {
+  text-align: center;
+  color: white;
+  display: block;
+}
+
+.section__title {
+  font-size: 3em;
+  line-height: 1;
+  margin: 0 0 10px;
+}
+
+.section__subtitle {
+  font-size: 1.2em;
+  line-height: 1.5;
+  opacity: 0.5;
+}
+.section__subtitle a {
+  color: inherit;
+}
+
+.project-carousel {
+  position: relative;
+  padding: 10px 0;
+}
+
+.project-strip {
+  margin: 150px 0 150px;
+  filter: blur(10px);
+}
+.project-strip .project {
+  cursor: pointer;
+}
+.project-strip img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+.project-screen {
+  width: 300px;
+  height: 361px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.project-screen .project-detail {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 300px;
+  height: 361px;
+  margin: 32px auto 0;
+  z-index: 1;
+  background-color: #333;
+}
+.project-screen .screen-frame {
+  content: " ";
+  width: 400px;
+  height: 500px;
+  position: absolute;
+  background-image: url("https://dl.dropboxusercontent.com/u/26808427/cdn/experiments/training/macbook-frame.png");
+  background-repeat: no-repeat;
+}
+.project-screen .project {
+  margin-right: -100%;
+  float: left;
+  cursor: move;
+}
+</style>
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+
+</head>
+
+<body translate="no" >
+  <div class="section section-project">
+  <h2 class="section__title">Fotitos</h2>
+  <div class="project-carousel">
+    <div class="project-strip">
+      <div class="project"><img src="fotos/1.jpg" alt="" width="300" heigth="400"/></div>
+      <div class="project"><img src="fotos/2.jpg" alt="" width="300" heigth="400"/></div>
+      <div class="project"><img src="fotos/3.jpg" alt="" width="300" heigth="400"/></div>
+      <div class="project"><img src="fotos/4.jpg" alt="" width="300" heigth="400"/></div>
+      <div class="project"><img src="fotos/5.jpg" alt="" width="300" heigth="400"/></div>
+      <div class="project"><img src="fotos/6.jpg" alt="" width="300" heigth="400"/></div>
+      <div class="project"><img src="fotos/7.jpg" alt="" width="300" heigth="400"/></div>
+      <div class="project"><img src="fotos/8.jpg" alt="" width="300" heigth="400"/></div>
+      <div class="project"><img src="fotos/9.jpg" alt="" width="300" heigth="400"/></div>
+
+    </div>
+    <div class="project-screen">
+      <div class="project-detail">
+      <div class="project"><img src="fotos/1.jpg" alt="" width="300" heigth="400"/></div>
+      <div class="project"><img src="fotos/2.jpg" alt="" width="300" heigth="400"/></div>
+      <div class="project"><img src="fotos/3.jpg" alt="" width="300" heigth="400"/></div>
+      <div class="project"><img src="fotos/4.jpg" alt="" width="300" heigth="400"/></div>
+      <div class="project"><img src="fotos/5.jpg" alt="" width="300" heigth="400"/></div>
+      <div class="project"><img src="fotos/6.jpg" alt="" width="300" heigth="400"/></div>
+      <div class="project"><img src="fotos/7.jpg" alt="" width="300" heigth="400"/></div>
+      <div class="project"><img src="fotos/8.jpg" alt="" width="300" heigth="400"/></div>
+      <div class="project"><img src="fotos/9.jpg" alt="" width="300" heigth="400"/></div>
+           
+      </div>
+      <div class="screen-frame"></div>
+    </div>
+  </div>
+</div>
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
+
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js'></script>
+      <script id="rendered-js" >
+$(".project-detail").slick({
+  slidesToShow: 1,
+  arrows: false,
+  asNavFor: '.project-strip',
+  autoplay: true,
+  autoplaySpeed: 3000 });
+
+
+$(".project-strip").slick({
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  arrows: false,
+  asNavFor: '.project-detail',
+  dots: false,
+  infinite: true,
+  centerMode: true,
+  focusOnSelect: true });
+//# sourceURL=pen.js
+    </script>
+
+  
+
+</body>
+
+</html>

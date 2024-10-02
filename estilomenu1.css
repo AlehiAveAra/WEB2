@@ -1,0 +1,54 @@
+body{
+	background-image: url(fotos/bg_gotham.jpg);
+	font-family: "Comic Sans MS";
+	padding: 150px;
+}
+
+nav{
+background-color: white;
+}
+
+nav ul{
+	list-style: none;
+}
+nav ul li{
+	display: inline-block;
+}
+
+nav ul li a{
+color:red;
+text-decoration:none;
+display: block;
+padding: 15px 30px;
+
+}
+nav ul li a:hover{
+	background-color: gold;
+}
+
+.item-r{
+	float: right;
+}
+
+
+.container2 {
+  background-image: url(fotos/blur3.png);
+  background-size: cover;
+  background-attachment: fixed;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  border-radius: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: left;
+  font-size: 25px;
+  color: #f9f9f9;
+  text-shadow: 2px 2px 2px black;
+  padding: 50px;
+}
+
+img{
+	border-radius: 30px;
+	width: 100px;
+	
+}

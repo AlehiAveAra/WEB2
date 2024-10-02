@@ -1,0 +1,22 @@
+body {
+    font-family: Times;
+    color: blue;
+    font-size: 23px;
+    background-image: url("fotos/fondo3.jpg"); 
+}
+   h1 {
+    font-family: Arial; 
+}
+   p.uno{
+   	font-family: "Comic Sans MS";
+   	font-size: 12px;
+   	color: red;
+   	background-color: pink;
+    text-align:center;
+   }
+   p.dos{
+   	font-family: Calibri;
+   	font-size: 28px;
+   	color: green;
+   	background-color: black;
+   }

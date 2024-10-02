@@ -1,0 +1,31 @@
+body {
+    font-family: Arial;
+    color: red;
+    font-size: 25px;
+    background-image: url("fotos/fondo3.jpg"); 
+}
+
+
+ul li{
+  list-style-image: url("fotos/jeje.ico");
+  color:orange;
+  font-size: 18px;
+}
+
+ol li{
+	list-style-type: upper-alpha;
+	color:yellow;
+	font-size: 23px;
+
+}
+
+img.uno{
+	float: left; 
+	width: 250px; 
+	margin: 2px 2px; 
+	padding: 10px; 
+	border-radius: 50%;
+	border: 5px solid red;
+
+
+}

@@ -1,0 +1,79 @@
+body{
+	background-image: url(fotos/bg_gotham.jpg);
+	font-family: "Comic Sans MS";
+	padding: 150px;
+}
+
+nav{
+background-color: pink;
+}
+
+nav ul{
+	list-style: none;
+}
+nav ul li{
+display: inline-block;
+}
+
+nav ul li a{
+	color: purple;
+	text-decoration: none;
+	display: block;
+	padding: 20px 60px;
+}
+
+nav ul li a:hover{
+	background-color: aqua;
+	color:red;
+	font-family: "Lucida Console";
+}
+
+.container2 {
+  background-image: url(fotos/blur3.png);
+  background-size: cover;
+  background-attachment: fixed;
+  margin-left: auto;
+  margin-right: auto;
+  
+  border-radius: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: left;
+  font-size: 25px;
+  color: #f9f9f9;
+  text-shadow: 2px 2px 2px black;
+  padding: 0px;
+  
+
+}
+
+
+img.anima{
+	width: 100px;
+	border-radius: 30px;
+	border:4px solid yellow;
+}
+
+img.anima:hover{
+	width: 150px;
+	border-radius: 30px;
+	border:7px solid purple;
+}
+.otro{
+ background-color: rgba(0,0,255,0.4);
+height: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  
+  border-radius: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: left;
+  font-size: 25px;
+  color: #f9f9f9;
+  text-shadow: 2px 2px 2px black;
+  padding: 0px;	
+}
+
+
+.item-r{
+	float: right;
+}
